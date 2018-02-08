@@ -1,4 +1,4 @@
 # Server GraphQL + MongoDB :-)
 
 
-[Demo](https://api-service.now.sh/graphiql)
+[Demo](https://api-services.now.sh/)
