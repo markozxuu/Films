@@ -29,6 +29,12 @@
     "eslint-plugin-standard": "^3.0.1",
     "prettier": "^1.10.2"
   },
+  "babel": {
+    "presets": ["node8"],
+    "plugins": [
+      "babel-plugin-inline-import"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "prettier-standard/lib/base",
