@@ -1,8 +1,6 @@
-'use strict'
-
-const { makeExecutableSchema } = require('graphql-tools')
-const Movie = require('./Movie.graphql')
-const resolvers = require('../resolver')
+import { makeExecutableSchema } from 'graphql-tools'
+import Movie from './Movie.graphql'
+import resolvers from '../resolver'
 
 const rootQuery = `
     type Query {
@@ -16,7 +14,7 @@ const rootQuery = `
         movieDelete(movieId: String): Movie
     }
 `
-module.exports = makeExecutableSchema({
+export default makeExecutableSchema({
   typeDefs: [rootQuery, Movie],
   resolvers
 })
