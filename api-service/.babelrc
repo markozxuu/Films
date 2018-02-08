@@ -1,0 +1,6 @@
+{
+    "presets": ["node8"],
+    "plugins": [
+        "babel-plugin-inline-import"
+    ]
+}
