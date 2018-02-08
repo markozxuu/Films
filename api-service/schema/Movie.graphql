@@ -1,20 +1,20 @@
 type Movie {
-    _id: String
-    name: String
-    description: String
-    poster: String
-    date: String
+  _id: String
+  name: String
+  description: String
+  poster: String
+  date: String
 }
 
 input EditMovie {
-    name: String
-    description: String
-    date: String
+  name: String
+  description: String
+  date: String
 }
 
 input NewMovie {
-    name: String!
-    description: String!
-    poster: String!
-    date: String !
+  name: String!
+  description: String!
+  poster: String!
+  date: String!
 }

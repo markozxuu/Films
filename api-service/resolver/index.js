@@ -1,6 +1,4 @@
-'use strict'
-
-module.exports = {
+export default {
   Query: {
     allFilms: async (_, args, { Movie }) => {
       const films = await Movie.find()

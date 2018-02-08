@@ -1,12 +1,10 @@
-'use strict'
-
-const { graphqlExpress, graphiqlExpress } = require('apollo-server-express')
-const express = require('express')
-const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
-const cors = require('cors')
-const schema = require('./schema')
-const Movie = require('./models/Movie')
+import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
+import express from 'express'
+import bodyParser from 'body-parser'
+import mongoose from 'mongoose'
+import cors from 'cors'
+import schema from './schema'
+import Movie from './models/Movie'
 require('dotenv').config()
 
 const app = express()

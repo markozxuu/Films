@@ -1,6 +1,4 @@
-'use strict'
-
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
 
 const Movie = mongoose.model('Movie', {
   name: String,
@@ -9,4 +7,4 @@ const Movie = mongoose.model('Movie', {
   date: String
 })
 
-module.exports = Movie
+export default Movie
