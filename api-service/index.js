@@ -17,7 +17,7 @@ const server = createServer(app)
 const PORT = process.env.PORT || 3000
 const NODE_ENV = process.env.NODE_ENV || 'development'
 
-mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise
 // Start connection
 mongoose
   .connect(process.env.DB_HOST)
@@ -29,9 +29,9 @@ mongoose
   })
 
 // set generic middlewares
-app.use(cors());
-app.use(compression());
-app.use(morgan('common'));  
+app.use(cors())
+app.use(compression())
+app.use(morgan('common'))
 
 // set /graphql endpoint
 app.use(
@@ -45,7 +45,7 @@ if (NODE_ENV !== 'production') {
   app.use(graphiqlExpress({ endpointURL: '/graphql' }))
 }
 
-app.listen(PORT, err => {
+server.listen(PORT, err => {
   if (err) throw err
   console.log(`> Ready On http://localhost:${PORT}/graphiql`)
 })
